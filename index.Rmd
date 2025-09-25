@@ -1,0 +1,351 @@
+---
+title: "Fundamentos de transporte"
+author: 
+  - <br></br>Renata Oliveira
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "xaringan-themer.css"]
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+      slideNumberFormat: |
+         <div class="progress-bar-container">
+           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+           </div>
+         </div>
+
+---
+
+```{r child = "setup.Rmd"}
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+```{r xaringan-panelset, echo=FALSE, message=FALSE, warning=FALSE}
+xaringanExtra::use_panelset()
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+```
+
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+
+```{r broadcast, echo=FALSE}
+xaringanExtra::use_broadcast()
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble()
+```
+
+class: center, middle
+
+## Retrospecto
+
+---
+
+## Definições
+
+### Logística
+
+.midi[
+.question[
+“**Logística** é dispor a **mercadoria ou o serviço** certo, no **lugar** certo, no **tempo** certo e nas **condições desejadas**, ao mesmo tempo em que fornece a **maior contribuição à empresa**”. 
+(Ballou, 2001)
+]
+]
+
+### Gestão Cadeia de Suprimentos
+
+.question[
+.midi[
+**Cadeia de suprimentos** é a estrutura consolidada e integrada, em níveis estratégico, tático e operacional, entre agentes de produção, mercadológicos, logísticos e sociedade, para que seja possível coordenar as operações de maneira a garantir a gestão orientada à logística, tendo como objetivo o _trade-off_ entre **responsividade** e **eficiência**, além de garantia de um contexto sustentável de desenvolvimento por ações **socialmente responsáveis** e **resilientes.** 
+]
+]
+
+---
+
+## Fatores-chave de desempenho
+
+- Instalações   
+- Estoques   
+- Transportes   
+- Informação   
+- Sourcing   
+- Pricing
+
+---
+
+## Definições: Transporte
+
+.midi[
+.question[
+**Transporte** pode ser definido como o **conjunto de atividades** que propiciam o **deslocamento de pessoas e bens**, por **meios específicos**.
+]
+]
+
+- **Sistema de transportes**   
+É o conjunto constituído por elementos necessários ao deslocamentos de bens e pessoas. 
+
+- **Rede de transporte**   
+É o conjunto de vias, ou malha, de um dada região, integrantes de uma modalidade de transporte.
+
+- **Meio**
+É o ambiente físico por onde se desloca o veículo. Ex: terrestre, aquaviário, aéreo.
+
+
+---
+
+## Definições: Transporte
+
+- **Modo ou modalidade**   
+É uma tecnologia para produção de transportes. Ex: Transporte aéreo
+
+- **Via x Rota**   
+Via é o caminho físico por onde se desloca o veículo. Rota é o trajeto que o veículo percorre.
+
+---
+
+## Classificação institucional dos sistemas de transporte
+
+- **Sistemas Abertos**
+  - Poder público constrói e mantém a via. 
+  - Ingresso Linear
+
+- **Sistemas Fechados**
+  - Poder público constrói concede a uma instituição privada o poder de manter, operar, explorar as vias. 
+  - Ingresso pontual
+
+
+---
+
+## Classificação técnica dos sistemas de transporte
+
+- **Segundo a natureza das vias**
+  - **Terrestre**   
+	Via forçada: ferrovia, dutovia
+	Via livre: rodovia
+  - **Aéreo**   
+	Doméstico e Internacional - rota
+  - **Aquaviário**   
+	Marítimo: longo curso e cabotagem
+	Águas interiores: fluvial, lacustre
+	
+---
+
+## Classificação técnica dos sistemas de transporte
+
+- **Segundo o sistema de deslocamento dos materiais e bens**
+  - **Sem emprego de veículo**   
+  Dutovias e esteira transportadora (transporte funicular)
+
+  - **Com emprego de veículo**   
+  Capacidade de transporte não á armazenável – depende do peso e volume da carga a ser transportada
+  O custo de transporte é em função da utilização dos veículos
+  Há parcela na composição de custos resultante do fluxos de veículos vazios 
+
+---
+
+## Fatores que levam ao baixo aproveitamento da capacidade (oferta) de transporte
+- Transportes unidirecionais – sem fluxo de retorno
+- Desequilíbrio de tráfego entre os dois sentidos
+- Sazonalidade da demanda
+- Concorrência inter e intramodal
+- Falhas da programação da oferta
+- Emprego de veículos inadequados
+
+---
+
+## Elementos básicos para a operação de transportes
+
+.pull-left[
+- **Elementos Básicos**   
+	Força Motriz   
+	Veículo   
+	Via 
+
+- **Fatores Dimensionais**   
+	Quantidade   
+	Distância   
+	Tempo
+]
+
+.pull-right[
+- **Tipos de deslocamento**   
+	Coleta   
+	Circulação   
+	Entrega
+
+- **Atividades**   
+	Carga   
+	Descarga   
+	Transbordo   
+]
+
+---
+	
+## Volume transportado x produção de transporte
+- **Volume transportado**   
+	Quantidade de bens ou pessoas movimentadas em um determinado período de tempo.
+- **Produção de transporte**   
+	Quantidade de bens ou pessoas movimentadas em um determinado período de tempo, multiplicada pela distância
+percorrida.
+
+- **Observações**
+-	Considerar as TU pode conduzir a um resultado enganoso na avaliação da quantidade de movimentação realizada.
+-	Isto permite compreender as razões que conduzem à utilização das TKU ou PKm.
+-	TKU = toneladas úteis realizadas (tráfego remunerado).
+
+---
+
+## Critérios para escolha de alternativas modais
+
+- Custo de transporte
+- Capacidade do modo – volume de tráfego
+- Tempo em trânsito - agilidade
+- Confiabilidade
+- Segurança – avarias e roubos
+- Freqüência da oferta
+- Disponibilidade de informações
+- Serviços logísticos adicionais
+- Acessibilidade 
+- Flexibilidade 
+
+---
+
+## Tabela Comparativa dos Modos de Transporte de Cargas
+
+| Atributo | Rodoviário | Ferroviário | Aéreo | Aquaviário (Marítimo/Fluvial) | Dutoviário |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Principais Características** | Porta-a-porta, flexibilidade | Alto volume, longo curso | Alta velocidade, urgência | Alta capacidade, baixo custo por volume | Fluxo contínuo, dedicado |
+| **Custo Fixo** | Baixo | **Muito Alto** (via, terminais, locomotivas) | **Muito Alto** (aeronaves, aeroportos) | Médio a Alto (navios, portos) | **Altíssimo** (construção da dutovia) |
+| **Custo Variável** | Alto (combustível, pedágio, manutenção) | Baixo (diluído pelo volume) | **Muito Alto** (combustível, taxas aeroportuárias) | **Muito Baixo** (combustível, operação) | **Muito Baixo** (energia, manutenção) |
+
+---
+
+## Tabela Comparativa dos Modos de Transporte de Cargas
+
+| Atributo | Rodoviário | Ferroviário | Aéreo | Aquaviário (Marítimo/Fluvial) | Dutoviário |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Velocidade (Porta-a-Porta)** | **Média-Alta** (curtas/médias distâncias) | Baixa (transbordos, baixa velocidade comercial) | **Altíssima** (percurso), mas acesso ao aeroporto pode atrasar | **Muito Baixa** | Contínua, mas muito lenta |
+| **Flexibilidade de Rota** | **Altíssima** | Baixa (fixa aos trilhos) | Média (fixa a rotas aéreas e aeroportos) | Baixa (fixa a rotas marítimas/fluviais e portos) | **Nenhuma** (infraestrutura física fixa) |
+
+
+---
+
+## Tabela Comparativa dos Modos de Transporte de Cargas
+
+| Atributo | Rodoviário | Ferroviário | Aéreo | Aquaviário (Marítimo/Fluvial) | Dutoviário |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Acessibilidade** | **Altíssima** (vasta rede de estradas) | Média (necessita de terminais de transbordo) | Baixa (dependente de aeroportos) | Baixa (dependente de portos) | Muito Baixa (pontos específicos de ingresso) |
+| **Capacidade de Carga** | Baixa a Média (limitada pelo veículo) | **Muito Alta** (trens longos com vários vagões) | **Muito Baixa** (limitada ao peso e volume da aeronave) | **Altíssima** (navios de grande porte) | **Altíssima** (fluxo contínuo) |
+
+
+---
+
+## Tabela Comparativa dos Modos de Transporte de Cargas
+
+| Atributo | Rodoviário | Ferroviário | Aéreo | Aquaviário (Marítimo/Fluvial) | Dutoviário |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Distância Ideal** | Curtas e Médias (até ~800 km) | **Longas** (acima de ~500 km) | Médias a Longas (para prioridade) | **Muito Longas** (internacional, cabotagem) | Longas (uma vez instalado) |
+| **Tipos de Carga mais Adequados** | Diversificados: perecíveis, manufaturados, fracionados (LTL) e lotação (FTL). | Produtos de baixo valor agregado, granéis (minério, grãos), contêineres. | Cargas de alto valor, perecíveis críticos, urgentes, eletrônicos, farmacêuticos. | Granéis (sólidos/líquidos), contêineres, mercadorias não perecíveis de grande volume. | **Específicas:** líquidos (petróleo, derivados), gases (GNL) e sólidos granulares (minério em slurry). |
+
+
+---
+
+## Tabela Comparativa dos Modos de Transporte de Cargas
+
+| Atributo | Rodoviário | Ferroviário | Aéreo | Aquaviário (Marítimo/Fluvial) | Dutoviário |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Confiabilidade / Pontualidade** | Média (sujeito a tráfego, clima) | **Alta** (menos afetado por clima e congestionamento) | **Alta** (para o percurso aéreo) | Baixa (sujeito a clima, filas portuárias) | **Altíssima** (operacional 24/7, fluxo contínuo) |
+| **Segurança (Roubos/Avarias)** | **Baixa** (alto risco de roubo e avaria por manuseio) | Alta (menos manuseio, trajeto seguro) | Alta (segurança aeroportuária rigorosa) | Média (roubos em portos, avarias por manuseio ou intempérie) | **Altíssima** (menor risco de roubo e avaria) |
+
+---
+
+## Tabela Comparativa dos Modos de Transporte de Cargas
+
+| Atributo | Rodoviário | Ferroviário | Aéreo | Aquaviário (Marítimo/Fluvial) | Dutoviário |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Impacto Ambiental** | Alto (emissões de CO₂, poluição sonora, congestionamentos) | Médio-Baixo (mais eficiente em energia por TKU) | **Muito Alto** (alto consumo de combustível) | Baixo (emissões por tonelada*km são baixas, mas uso de combustíveis poluentes) | Baixo (no operação, mas risco de vazamentos com alto impacto) |
+| **Infraestrutura Nacional (Brasil)** | Extensa (malha rodoviária predominante) | Limitada e deficitária (malha concentrada) | Razoável (aeroportos principais bem equipados) | Boa para exportação (portos especializados) | Em expansão (rede para óleo, gás e derivados) |
+
+---
+
+## Tabela Comparativa dos Modos de Transporte de Cargas
+
+| Atributo | Rodoviário | Ferroviário | Aéreo | Aquaviário (Marítimo/Fluvial) | Dutoviário |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Modos de Operação / Contratação** | Próprio, Alugado (Fretamento), Contratação de Transportadora/OL. | Concessão de vagões, contrato com ferrovias. | Companhias aéreas de carga, carga em voos de passageiros, operadores logísticos especializados. | Companhias de navegação (armadores), agências marítimas, fretamento de navios (charter). | Contrato de longo prazo com a empresa operadora da dutovia. |
+
+---
+
+## Resumo e Aplicações Práticas:
+
+.midi[
+*   **Rodoviário:** **Rei da flexibilidade e acessibilidade.** Ideal para a "última milha", distâncias curtas a médias e cargas diversas. Dominante em países como o Brasil, mas com custos variáveis elevados e problemas de segurança.
+*   **Ferroviário:** **Mestre do volume e longas distâncias.** Perfeito para commodities (minério, grãos, combustíveis) e contêineres em rotas fixas. É uma alternativa mais econômica e sustentável ao rodoviário para longos cursos, quando a infraestrutura existe.
+*   **Aéreo:** **Especialista em velocidade e urgência.** Justificado pelo alto custo quando o tempo é crítico ou quando o valor da mercadoria é muito alto. Reduz custos de estoque em cadeias globais.
+*   **Aquaviário:** **Campeão de capacidade e custo para longuíssimas distâncias.** Base do comércio internacional para cargas não perecíveis. A baixa velocidade é compensada pelo volume massivo transportado a um custo muito baixo por unidade.
+*   **Dutoviário:** **Solução especializada para fluxos contínuos.** Não é um "meio de transporte" no sentido tradicional, mas sim uma "esteira rolante" para produtos específicos. Oferece segurança e baixo custo operacional, mas com zero flexibilidade após a instalação.
+]
+
+
+---
+
+## Escolha modal
+
+A escolha do modal ideal quase sempre envolve um **trade-off** (compensação) entre os atributos supracitados, sendo comum a utilização de mais de um modo em uma mesma viagem da carga (transporte **multimodal**/**intermodal**).
+
+---
+
+## Integração modal
+
+.midi[
+.question[
+- Complementação entre os modos
+]
+]
+
+- **Multimodalidade X Intermodalidade**   
+  **Transporte Multimodal De Cargas:**   
+  é definido como aquele que, regido por um único contrato, utiliza duas ou mais modalidades de transporte, desde a origem até o destino, e é executado sob a responsabilidade única de um OTM.   
+  **Transporte intermodal de cargas:**   
+  é aquele que utiliza duas ou mais modalidades de transporte, desde a origem até o destino,
+
+- **Integração Operacional**   
+  Sistemas integrados: cargas x veículos   
+  EDI – Electronic Data Interchange
+
+---
+
+class: center, middle
+
+.larger[
+**DÚVIDAS?**
+]

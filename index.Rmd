@@ -320,7 +320,7 @@ percorrida.
 
 ## Escolha modal
 
-A escolha do modal ideal quase sempre envolve um **trade-off** (compensação) entre os atributos supracitados, sendo comum a utilização de mais de um modo em uma mesma viagem da carga (transporte **multimodal**/**intermodal**).
+A escolha modal ideal quase sempre envolve um **trade-off** (compensação) entre os atributos supracitados, sendo comum a utilização de mais de um modo em uma mesma viagem da carga (transporte **multimodal**/**intermodal**).
 
 ---
 
